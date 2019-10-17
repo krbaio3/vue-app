@@ -1,14 +1,17 @@
 import Vue from 'vue';
 import VueLogger from 'vuejs-logger';
+
 import '@/plugins/axios';
 import '@/plugins/bootstrap-vue';
+import '@/plugins/vee-validate';
+import { options } from '@/plugins/logger';
+import { Http } from '@/namespaces/Http';
+
 import App from './App.vue';
 import router from './router';
 import store from './store';
 import i18n from './i18n';
 
-import { Http } from '@/namespaces/Http';
-import { options } from './plugins/logger';
 
 Vue.config.productionTip = false;
 
