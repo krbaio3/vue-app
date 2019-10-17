@@ -18,19 +18,19 @@ export namespace Http {
         protected request() {
             Vue.axios.interceptors.request.use((config: AxiosRequestConfig) => {
                 // tslint:disable-next-line:no-console
-               Vue.$log.debug('Axios resquest');
-               return config;
+                Vue.$log.debug('Axios resquest');
+                return config;
             }, (error: any) => {
                 // tslint:disable-next-line:no-console
-               Vue.$log.error('Axios resquest Error');
-               return Promise.reject(error);
+                Vue.$log.error('Axios resquest Error');
+                return Promise.reject(error);
             });
         }
         protected response() {
             Vue.axios.interceptors.response.use((response: AxiosResponse) => {
                 // tslint:disable-next-line:no-console
-               Vue.$log.debug('Axios resquest');
-               return response;
+                Vue.$log.debug('Axios resquest');
+                return response;
             }, (error: any) => {
                 // tslint:disable-next-line:no-console
                 Vue.$log.error('Axios resquest Error');
