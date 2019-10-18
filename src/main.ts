@@ -4,7 +4,9 @@ import VueLogger from 'vuejs-logger';
 import '@/plugins/axios';
 import '@/plugins/bootstrap-vue';
 import '@/plugins/vee-validate';
+import '@/plugins/block-ui';
 import { options } from '@/plugins/logger';
+
 import { Http } from '@/namespaces/Http';
 
 import App from './App.vue';

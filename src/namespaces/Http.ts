@@ -1,9 +1,9 @@
 import Vue from 'vue';
-import { AxiosRequestConfig, AxiosResponse, AxiosInstance } from 'axios';
+import { AxiosRequestConfig, AxiosResponse, AxiosInstance, AxiosStatic } from 'axios';
 
 declare module 'vue/types/vue' {
     interface VueConstructor {
-        axios: AxiosInstance;
+        axios: AxiosStatic;
         $log: any;
     }
 }
