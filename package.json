@@ -12,11 +12,12 @@
   "dependencies": {
     "applicationinsights": "^1.4.2",
     "axios": "^0.19.0",
-    "bootstrap-vue": "^2.0.3",
+    "bootstrap-vue": "^2.0.4",
     "core-js": "^2.6.5",
     "vee-validate": "^3.0.11",
     "vue": "^2.6.10",
     "vue-axios": "^2.1.5",
+    "vue-blockui": "^1.1.7",
     "vue-class-component": "^7.0.2",
     "vue-i18n": "^8.0.0",
     "vue-property-decorator": "^8.1.0",

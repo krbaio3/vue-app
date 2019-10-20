@@ -1927,7 +1927,7 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap-vue@^2.0.3:
+bootstrap-vue@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.0.4.tgz#9bf99754a22acece72e02adda3c7965b818ae2bc"
   integrity sha512-/5WXa3ir5uajcs7ze7jz7QXpYuJGWHjvJ8biMq0+e0IIIxw2jSdh4LsiFKD7C7qtgKre28hhXOfx79RmZX4wcQ==
@@ -3484,9 +3484,9 @@ ejs@^2.6.1:
   integrity sha512-kS/gEPzZs3Y1rRsbGX4UOSjtP/CeJP0CxSNZHYxGfVM/VgLcv0ZqM7C45YyTj2DI2g7+P9Dd24C+IMIg6D0nYQ==
 
 electron-to-chromium@^1.3.247:
-  version "1.3.283"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.283.tgz#296082f4eca0f53a4c1c4f97946317b39728a5d4"
-  integrity sha512-CqRYkrJlmcr7gD6Gp1jFy1hkdBZMId1OUlrkQGsaaFJMljQ59UqYlbaG8S7d3yQTbD80uzFWK5b5zHkL9dfVeQ==
+  version "1.3.284"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.284.tgz#b24359fa4f49b3a7c52afc005d59ec3aa9f6796e"
+  integrity sha512-duOA4IWKH4R8ttiE8q/7xfg6eheRvMKlGqOOcGlDukdHEDJ26Wf7cMrCiK9Am11mswR6E/a23jXVA4UPDthTIw==
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -9831,7 +9831,12 @@ vue-axios@^2.1.5:
   resolved "https://registry.yarnpkg.com/vue-axios/-/vue-axios-2.1.5.tgz#1af4bf1218ed71309c76afb38d0f683e312c24a7"
   integrity sha512-th5xVbInVoyIoe+qY+9GCflEVezxAvztD4xpFF39SRQYqpoKD2qkmX8yv08jJG9a2SgNOCjirjJGSwg/wTrbmA==
 
-vue-class-component@^7.0.1, vue-class-component@^7.0.2:
+vue-blockui@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/vue-blockui/-/vue-blockui-1.1.7.tgz#5d9f2ec4a1e29d7aaacc4e5726d4539f09dd9bd6"
+  integrity sha512-FkOqaXq/3VxfM5oAIu51XUWvIBxUvAV0MbiutoR8Wcdo19FPA4GTV13rpyTf2S/fRigFkLKCcJoW1JM19EYgsQ==
+
+vue-class-component@^7.0.2, vue-class-component@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-7.1.0.tgz#b33efcb10e17236d684f70b1e96f1946ec793e87"
   integrity sha512-G9152NzUkz0i0xTfhk0Afc8vzdXxDR1pfN4dTwE72cskkgJtdXfrKBkMfGvDuxUh35U500g5Ve4xL8PEGdWeHg==
@@ -9905,11 +9910,11 @@ vue-loader@^15.7.0:
     vue-style-loader "^4.1.0"
 
 vue-property-decorator@^8.1.0:
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-8.2.2.tgz#ac895e9508ee1bf86e3a28568d94d842c2c8e42f"
-  integrity sha512-3gRrIeoUtjXvkoMX2stJsVs7805Pa9MXEndnk21ej+sWO7AIc5HF1TKqK0Pox5TEjpO02UbadIF0QWNrx6ZwXQ==
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-8.3.0.tgz#536f027dc7d626f37c8d85a2dc02f0a6cb979440"
+  integrity sha512-77YtTbZHd5CNiPzbqv51kEgL48yvD2dUDfF28vEyw3MbQ9bBAb/tDyFzskcqjNRbWyXk1vq4oM2CK/LfhxuIBg==
   dependencies:
-    vue-class-component "^7.0.1"
+    vue-class-component "^7.1.0"
 
 vue-router@^3.0.3:
   version "3.1.3"
