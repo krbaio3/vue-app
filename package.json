@@ -10,6 +10,9 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/vue-fontawesome": "^0.1.7",
     "applicationinsights": "^1.4.2",
     "axios": "^0.19.0",
     "bootstrap-vue": "^2.0.4",
@@ -20,6 +23,7 @@
     "vue-blockui": "^1.1.7",
     "vue-class-component": "^7.0.2",
     "vue-i18n": "^8.0.0",
+    "vue-loading-overlay": "^3.2.0",
     "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.3",
     "vuejs-logger": "^1.5.3",
