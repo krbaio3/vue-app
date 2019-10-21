@@ -31,9 +31,7 @@ export default new Vuex.Store({
     [globalTypes.getters.language]: (state) => state.language,
   },
   actions: {
-    [globalTypes.actions.changeLanguage]: ({
-      commit,
-    },                                     lang) => {
+    [globalTypes.actions.changeLanguage]: ({ commit }, lang) => {
       commit(globalTypes.mutations.setLanguage, lang);
       // Pasar a un strategy pattern
       // switch (lang) {
