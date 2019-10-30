@@ -9,7 +9,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Getter } from 'vuex-class';
-import globalTypes from '@/types/global';
+import { globalTypes } from '@/store/global';
 @Component({
     components: {},
 })

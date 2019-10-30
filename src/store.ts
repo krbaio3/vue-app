@@ -5,7 +5,7 @@ import es from 'vee-validate/dist/locale/es.json';
 // import en from 'vee-validate/dist/locale/en.json';
 import { vuexPersistence } from '@/plugins/vuex-persist';
 // Global Types
-import globalTypes from '@/store/types/global';
+import { globalTypes } from '@/store/global';
 import { RootState } from './store/types';
 
 Vue.use(Vuex);
@@ -18,19 +18,19 @@ const rootStore: StoreOptions<RootState> = {
     language: 'es',
   },
   getters: {
-    [globalTypes.getters.processing]: (state) => state.processing,
-    [globalTypes.getters.language]: (state) => state.language,
-    [globalTypes.getters.appName]: (state) => state.appName,
-    [globalTypes.getters.appVersion]: (state) => state.appVersion,
+    [globalTypes.getters.processing]: (state: RootState) => state.processing,
+    [globalTypes.getters.language]: (state: RootState) => state.language,
+    [globalTypes.getters.appName]: (state: RootState) => state.appName,
+    [globalTypes.getters.appVersion]: (state: RootState) => state.appVersion,
   },
   mutations: {
-    [globalTypes.mutations.startProcessing](state) {
+    [globalTypes.mutations.startProcessing](state: RootState) {
       state.processing = true;
     },
-    [globalTypes.mutations.stopProcessing](state) {
+    [globalTypes.mutations.stopProcessing](state: RootState) {
       state.processing = false;
     },
-    [globalTypes.mutations.setLanguage](state, lang) {
+    [globalTypes.mutations.setLanguage](state: RootState, lang) {
       state.language = lang;
     },
   },
