@@ -1,19 +1,27 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
+import Vuex, { StoreOptions } from 'vuex';
 
-import { validate } from 'vee-validate';
 import es from 'vee-validate/dist/locale/es.json';
 // import en from 'vee-validate/dist/locale/en.json';
 import { vuexPersistence } from '@/plugins/vuex-persist';
 // Global Types
-import globalTypes from '@/types/global';
+import globalTypes from '@/store/types/global';
+import { RootState } from './store/types';
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+const rootStore: StoreOptions<RootState> = {
   state: {
+    appName: 'VueJS 2 Vuex Typescript',
+    appVersion: String(process.env.VERSION),
     processing: false,
     language: 'es',
+  },
+  getters: {
+    [globalTypes.getters.processing]: (state) => state.processing,
+    [globalTypes.getters.language]: (state) => state.language,
+    [globalTypes.getters.appName]: (state) => state.appName,
+    [globalTypes.getters.appVersion]: (state) => state.appVersion,
   },
   mutations: {
     [globalTypes.mutations.startProcessing](state) {
@@ -26,14 +34,11 @@ export default new Vuex.Store({
       state.language = lang;
     },
   },
-  getters: {
-    [globalTypes.getters.processing]: (state) => state.processing,
-    [globalTypes.getters.language]: (state) => state.language,
-  },
   actions: {
     [globalTypes.actions.changeLanguage]: ({ commit }, lang) => {
       commit(globalTypes.mutations.setLanguage, lang);
       // Pasar a un strategy pattern
+      // FIXME Revisar si esto ya lo hace solo con la nueva version
       // switch (lang) {
       //   case 'en':
       //     Validator.localize('en', ValidatorEn);
@@ -47,4 +52,8 @@ export default new Vuex.Store({
       // }
     },
   },
-});
+  modules: {},
+  plugins: [vuexPersistence.plugin],
+};
+
+export const store = new Vuex.Store<RootState>(rootStore);

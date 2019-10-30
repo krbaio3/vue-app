@@ -1,65 +1,15 @@
 <template>
   <div class="hello">
-    <img
-      src="http://lorempixel.com/400/200/"
-      alt=""
-    >
     <h1>{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a
-        href="https://cli.vuejs.org"
-        target="_blank"
-        rel="noopener"
-      >vue-cli documentation</a>.
+      This proyect has installed:
+      <ul>
+        <li v-for="(item, index) in installed" :key="index">
+          <a  href="">{{item}}</a>
+        </li>
+      </ul>
+      <small>* Installed but not configured</small>
     </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
-          target="_blank"
-          rel="noopener"
-        >babel</a></li>
-      <li><a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript"
-          target="_blank"
-          rel="noopener"
-        >typescript</a></li>
-      <li><a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-unit-jest"
-          target="_blank"
-          rel="noopener"
-        >unit-jest</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a
-          href="https://vuejs.org"
-          target="_blank"
-          rel="noopener"
-        >Core Docs</a></li>
-      <li><a
-          href="https://forum.vuejs.org"
-          target="_blank"
-          rel="noopener"
-        >Forum</a></li>
-      <li><a
-          href="https://chat.vuejs.org"
-          target="_blank"
-          rel="noopener"
-        >Community Chat</a></li>
-      <li><a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-          rel="noopener"
-        >Twitter</a></li>
-      <li><a
-          href="https://news.vuejs.org"
-          target="_blank"
-          rel="noopener"
-        >News</a></li>
-    </ul>
     <h3>Ecosystem</h3>
     <ul>
       <li><a
@@ -88,9 +38,6 @@
           rel="noopener"
         >awesome-vue</a></li>
     </ul>
-    <pre>
-      {{ res }}
-    </pre>
   </div>
 </template>
 
@@ -100,13 +47,19 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
-  private res!: object;
-  public created() {
-    this.axios.get('https://api.mockaroo.com/api/1ea29be0?count=10&key=daa3d0e0')
-      .then((response) => {
-        return this.res = response.data;
-      });
-  }
+  private installed: any = [
+    'fortawesome',
+    'vue-axios',
+    'bootstrap-vue',
+    'vee-validate',
+    'vue-blockui',
+    'vue-loading-overlay*',
+    'vue-class-component',
+    'vue-property-decorator',
+    'vue-i18n',
+    'vuejs-logger',
+    'vuex-persist',
+  ];
 }
 </script>
 

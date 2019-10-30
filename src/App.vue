@@ -24,6 +24,8 @@
         </b-nav-item-dropdown>
         <b-nav-item>
           <font-awesome-icon icon="user-secret" />
+        </b-nav-item>
+        <b-nav-item>
           <font-awesome-icon
             class="ml-2"
             icon="key"

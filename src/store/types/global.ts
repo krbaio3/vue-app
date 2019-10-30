@@ -7,6 +7,8 @@ export default namespace('global', {
     getters: [
         'processing',
         'language',
+        'appVersion',
+        'appName',
     ],
     mutations: [
         'startProcessing',
