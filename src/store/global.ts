@@ -1,6 +1,6 @@
 import { namespace } from '@/utils/namespace';
 
-export default namespace('global', {
+export const globalTypes = namespace('global', {
     actions: [
         'changeLanguage',
     ],

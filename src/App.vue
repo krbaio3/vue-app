@@ -42,7 +42,7 @@
 </template>
 
 <script lang="ts">
-import globalTypes from '@/types/global';
+import { globalTypes } from '@/store/global';
 import { mapGetters } from 'vuex';
 
 export default {
