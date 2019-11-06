@@ -1,13 +1,10 @@
 import Vue from 'vue';
 import Vuex, { StoreOptions } from 'vuex';
-
-import es from 'vee-validate/dist/locale/es.json';
-// import en from 'vee-validate/dist/locale/en.json';
 import { vuexPersistence } from '@/plugins/vuex-persist';
-// Global Types
-import { globalTypes } from '@/store/global';
 import { todoModule } from '@/store/modules/todo';
-import { RootState } from './store/types';
+import { RootState } from '@/store/types';
+import { localize } from 'vee-validate';
+import {i18n} from './i18n';
 
 Vue.use(Vuex);
 
@@ -19,38 +16,25 @@ const rootStore: StoreOptions<RootState> = {
     language: 'es',
   },
   getters: {
-    [globalTypes.getters.processing]: (state: RootState) => state.processing,
-    [globalTypes.getters.language]: (state: RootState) => state.language,
-    [globalTypes.getters.appName]: (state: RootState) => state.appName,
-    [globalTypes.getters.appVersion]: (state: RootState) => state.appVersion,
+    processing: (state: RootState) => state.processing,
+    language: (state: RootState) => state.language,
+    appName: (state: RootState) => state.appName,
+    appVersion: (state: RootState) => state.appVersion,
   },
   mutations: {
-    [globalTypes.mutations.startProcessing](state: RootState) {
+    startProcessing(state: RootState) {
       state.processing = true;
     },
-    [globalTypes.mutations.stopProcessing](state: RootState) {
+    stopProcessing(state: RootState) {
       state.processing = false;
     },
-    [globalTypes.mutations.setLanguage](state: RootState, lang) {
-      state.language = lang;
+    setLanguage(state: RootState, payload) {
+      state.language = payload.lang;
     },
   },
   actions: {
-    [globalTypes.actions.changeLanguage]: ({ commit }, lang) => {
-      commit(globalTypes.mutations.setLanguage, lang);
-      // Pasar a un strategy pattern
-      // FIXME Revisar si esto ya lo hace solo con la nueva version
-      // switch (lang) {
-      //   case 'en':
-      //     Validator.localize('en', ValidatorEn);
-      //     break;
-      //   case 'es':
-      //     Validator.localize('es', ValidatorEs);
-      //     break;
-      //   default:
-      //     Validator.localize('es', ValidatorEs);
-      //     break;
-      // }
+    changeLanguage: ({ commit }, lang) => {
+      commit('setLanguage', lang);
     },
   },
   modules: {

@@ -6,7 +6,7 @@ function mapValues(obj: any, f: any) {
   return res;
 }
 
-export const namespace = (module: string, types: any) => {
+export const createNamespace = (module: string, types: any) => {
   const newObj: any = {};
   mapValues(types, (names: any, type: string | number) => {
     newObj[type] = {};

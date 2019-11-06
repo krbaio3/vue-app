@@ -2,5 +2,25 @@
   "common": {
     "language": "Lenguaje"
   },
+  "todo": {
+    "form": {
+      "todo": "ToDo",
+      "add": "Anadir ToDo",
+      "placeholder": "Escribe el todo"
+    },
+    "list": {
+      "update": "Actualizar",
+      "delete": "Borrar",
+      "nothing": "No hay ToDo's"
+    },
+    "app": {
+      "pending": "ToDo's Pendientes",
+      "finish": "ToDo's Terminados",
+      "error": "Error cargando los ToDoS"
+    }
+  },
+  "messages": {
+    "processing": "Cargando"
+  },
   "message": "Vue Vuex TS con i18n !!"
 }

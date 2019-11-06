@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { ActionContext, ActionTree } from 'vuex';
 import { TodoState, Todo } from './types';
-import { RootState } from '../../types';
+import { RootState } from '@/store/types';
 import { AxiosResponse } from 'axios';
 
 
@@ -15,7 +15,7 @@ export const actions: TodoActionTree = {
                 url: '/todos',
             });
             const payload: Todo[] = response && response.data;
-            context.commit('todosLoaded', payload);
+            context.commit('todosLoad', payload);
         } catch (e) {
             context.commit('todosError', e.message);
         } finally {

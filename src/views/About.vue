@@ -9,13 +9,12 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Getter } from 'vuex-class';
-import { globalTypes } from '@/store/global';
 @Component({
     components: {},
 })
 export default class Home extends Vue {
-    @Getter(globalTypes.getters.appName) public appName!: string;
-    @Getter(globalTypes.getters.appVersion) public appVersion!: string;
+    @Getter('appName') public appName!: string;
+    @Getter('appVersion') public appVersion!: string;
 }
 </script>
 

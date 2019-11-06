@@ -6,6 +6,9 @@ const {
   DefinePlugin
 } = require('webpack');
 
+let port = 4300;
+let public = '0.0.0.0';
+
 module.exports = {
   transpileDependencies: ['vuex-persist'],
   chainWebpack: config => {
@@ -18,7 +21,8 @@ module.exports = {
       })
   },
   devServer: {
-    port: 4300,
+    port,
+    public,
   },
   configureWebpack: {
     devtool: 'source-map',

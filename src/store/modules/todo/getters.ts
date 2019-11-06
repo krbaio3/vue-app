@@ -1,6 +1,6 @@
 import { GetterTree } from 'vuex';
 import { TodoState, Todo } from './types';
-import { RootState } from '../../types';
+import { RootState } from '@/store/types';
 
 
 type TodoGetter = GetterTree<TodoState, RootState>;

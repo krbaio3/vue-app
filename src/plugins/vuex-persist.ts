@@ -1,5 +1,5 @@
 import VuexPersistence from 'vuex-persist';
-import { RootState } from '../store/types';
+import { RootState } from '@/store/types';
 
 export const vuexPersistence = new VuexPersistence<RootState>({
     storage: window.localStorage,
