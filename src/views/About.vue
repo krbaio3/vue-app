@@ -1,8 +1,18 @@
 <template>
     <div class="about">
-        <h1>This is an about page</h1>
-        <p>AppName: {{ appName }}</p>
-        <p>AppName: {{ appVersion }}</p>
+        <h1 v-html="$t('about.title')" v-once/>
+        <p>
+            <span v-html="$t('about.name')" v-once/>
+            <span v-html="name" v-once/>
+        </p>
+        <p>
+            <span v-html="$t('about.appName')" v-once/>
+            <span v-html="appName" v-once/>
+        </p>
+        <p>
+            <span v-html="$t('about.appVersion')" v-once/>
+            <span v-html="appVersion" v-once/>
+        </p>
     </div>
 </template>
 
@@ -10,11 +20,12 @@
 import { Component, Vue } from 'vue-property-decorator';
 import { Getter } from 'vuex-class';
 @Component({
-    components: {},
+    name: 'About',
 })
-export default class Home extends Vue {
+export default class About extends Vue {
     @Getter('appName') public appName!: string;
     @Getter('appVersion') public appVersion!: string;
+    @Getter('name') public name!: string;
 }
 </script>
 

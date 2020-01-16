@@ -3,14 +3,14 @@ import Vuex, { StoreOptions } from 'vuex';
 import { vuexPersistence } from '@/plugins/vuex-persist';
 import { todoModule } from '@/store/modules/todo';
 import { RootState } from '@/store/types';
-import { localize } from 'vee-validate';
-import {i18n} from './i18n';
+import { authModule } from './store/modules/auth/index';
 
 Vue.use(Vuex);
 
 const rootStore: StoreOptions<RootState> = {
   state: {
-    appName: 'VueJS 2 Vuex Typescript',
+    name: 'VueJS 2 Vuex Typescript',
+    appName: String(process.env.NAME_APP),
     appVersion: String(process.env.VERSION),
     processing: false,
     language: 'es',
@@ -18,17 +18,18 @@ const rootStore: StoreOptions<RootState> = {
   getters: {
     processing: (state: RootState) => state.processing,
     language: (state: RootState) => state.language,
+    name: (state: RootState) => state.name,
     appName: (state: RootState) => state.appName,
     appVersion: (state: RootState) => state.appVersion,
   },
   mutations: {
-    startProcessing(state: RootState) {
+    startProcessing (state: RootState) {
       state.processing = true;
     },
-    stopProcessing(state: RootState) {
+    stopProcessing (state: RootState) {
       state.processing = false;
     },
-    setLanguage(state: RootState, payload) {
+    setLanguage (state: RootState, payload) {
       state.language = payload.lang;
     },
   },
@@ -39,6 +40,7 @@ const rootStore: StoreOptions<RootState> = {
   },
   modules: {
     todoModule,
+    authModule,
   },
   plugins: [vuexPersistence.plugin],
 };

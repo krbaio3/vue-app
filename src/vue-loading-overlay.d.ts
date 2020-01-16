@@ -74,346 +74,346 @@ declare module 'vue-loading-overlay' {
 
     export const staticRenderFns: any[];
 
-    export function beforeDestroy(): void;
+    export function beforeDestroy (): void;
 
-    export function beforeMount(): void;
+    export function beforeMount (): void;
 
-    export function data(): any;
+    export function data (): any;
 
-    export function install(Vue: any, ...args: any[]): void;
+    export function install (Vue: any, ...args: any[]): void;
 
-    export function mounted(): void;
+    export function mounted (): void;
 
-    export function render(): any;
+    export function render (): any;
 
     export namespace methods {
-        function cancel(...args: any[]): void;
+        function cancel (...args: any[]): void;
 
-        function hide(): void;
+        function hide (): void;
 
-        function keyPress(event: any): void;
+        function keyPress (event: any): void;
 
     }
 
     export namespace props {
         // tslint:disable-next-line:class-name
         class active {
-            constructor(p0: any);
+            constructor (p0: any);
 
             // Native method; no parameter or return type inference available
-            public toString(): any;
+            public toString (): any;
 
             // Native method; no parameter or return type inference available
-            public valueOf(): any;
+            public valueOf (): any;
 
         }
         class backgroundColor {
 
-            public static fromCharCode(p0: any): any;
+            public static fromCharCode (p0: any): any;
 
-            public static fromCodePoint(p0: any): any;
+            public static fromCodePoint (p0: any): any;
 
-            public static raw(p0: any): any;
-            constructor(p0: any);
-
-            // Native method; no parameter or return type inference available
-            public anchor(p0: any): any;
+            public static raw (p0: any): any;
+            constructor (p0: any);
 
             // Native method; no parameter or return type inference available
-            public big(): any;
+            public anchor (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public blink(): any;
+            public big (): any;
 
             // Native method; no parameter or return type inference available
-            public bold(): any;
+            public blink (): any;
 
             // Native method; no parameter or return type inference available
-            public charAt(p0: any): any;
+            public bold (): any;
 
             // Native method; no parameter or return type inference available
-            public charCodeAt(p0: any): any;
+            public charAt (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public codePointAt(p0: any): any;
+            public charCodeAt (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public concat(p0: any): any;
+            public codePointAt (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public endsWith(p0: any): any;
+            public concat (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public fixed(): any;
+            public endsWith (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public fontcolor(p0: any): any;
+            public fixed (): any;
 
             // Native method; no parameter or return type inference available
-            public fontsize(p0: any): any;
+            public fontcolor (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public includes(p0: any): any;
+            public fontsize (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public indexOf(p0: any): any;
+            public includes (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public italics(): any;
+            public indexOf (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public lastIndexOf(p0: any): any;
+            public italics (): any;
 
             // Native method; no parameter or return type inference available
-            public link(p0: any): any;
+            public lastIndexOf (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public localeCompare(p0: any): any;
+            public link (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public match(p0: any): any;
+            public localeCompare (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public matchAll(p0: any): any;
+            public match (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public normalize(): any;
+            public matchAll (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public padEnd(p0: any): any;
+            public normalize (): any;
 
             // Native method; no parameter or return type inference available
-            public padStart(p0: any): any;
+            public padEnd (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public repeat(p0: any): any;
+            public padStart (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public replace(p0: any, p1: any): any;
+            public repeat (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public search(p0: any): any;
+            public replace (p0: any, p1: any): any;
 
             // Native method; no parameter or return type inference available
-            public slice(p0: any, p1: any): any;
+            public search (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public small(): any;
+            public slice (p0: any, p1: any): any;
 
             // Native method; no parameter or return type inference available
-            public split(p0: any, p1: any): any;
+            public small (): any;
 
             // Native method; no parameter or return type inference available
-            public startsWith(p0: any): any;
+            public split (p0: any, p1: any): any;
 
             // Native method; no parameter or return type inference available
-            public strike(): any;
+            public startsWith (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public sub(): any;
+            public strike (): any;
 
             // Native method; no parameter or return type inference available
-            public substr(p0: any, p1: any): any;
+            public sub (): any;
 
             // Native method; no parameter or return type inference available
-            public substring(p0: any, p1: any): any;
+            public substr (p0: any, p1: any): any;
 
             // Native method; no parameter or return type inference available
-            public sup(): any;
+            public substring (p0: any, p1: any): any;
 
             // Native method; no parameter or return type inference available
-            public toLocaleLowerCase(): any;
+            public sup (): any;
 
             // Native method; no parameter or return type inference available
-            public toLocaleUpperCase(): any;
+            public toLocaleLowerCase (): any;
 
             // Native method; no parameter or return type inference available
-            public toLowerCase(): any;
+            public toLocaleUpperCase (): any;
 
             // Native method; no parameter or return type inference available
-            public toString(): any;
+            public toLowerCase (): any;
 
             // Native method; no parameter or return type inference available
-            public toUpperCase(): any;
+            public toString (): any;
 
             // Native method; no parameter or return type inference available
-            public trim(): any;
+            public toUpperCase (): any;
 
             // Native method; no parameter or return type inference available
-            public trimEnd(): any;
+            public trim (): any;
 
             // Native method; no parameter or return type inference available
-            public trimLeft(): any;
+            public trimEnd (): any;
 
             // Native method; no parameter or return type inference available
-            public trimRight(): any;
+            public trimLeft (): any;
 
             // Native method; no parameter or return type inference available
-            public trimStart(): any;
+            public trimRight (): any;
 
             // Native method; no parameter or return type inference available
-            public valueOf(): any;
+            public trimStart (): any;
+
+            // Native method; no parameter or return type inference available
+            public valueOf (): any;
 
         }
 
 
         class canCancel {
-            constructor(p0: any);
+            constructor (p0: any);
 
             // Native method; no parameter or return type inference available
-            public toString(): any;
+            public toString (): any;
 
             // Native method; no parameter or return type inference available
-            public valueOf(): any;
+            public valueOf (): any;
 
         }
 
         class color {
 
-            public static fromCharCode(p0: any): any;
+            public static fromCharCode (p0: any): any;
 
-            public static fromCodePoint(p0: any): any;
+            public static fromCodePoint (p0: any): any;
 
-            public static raw(p0: any): any;
-            constructor(p0: any);
-
-            // Native method; no parameter or return type inference available
-            public anchor(p0: any): any;
+            public static raw (p0: any): any;
+            constructor (p0: any);
 
             // Native method; no parameter or return type inference available
-            public big(): any;
+            public anchor (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public blink(): any;
+            public big (): any;
 
             // Native method; no parameter or return type inference available
-            public bold(): any;
+            public blink (): any;
 
             // Native method; no parameter or return type inference available
-            public charAt(p0: any): any;
+            public bold (): any;
 
             // Native method; no parameter or return type inference available
-            public charCodeAt(p0: any): any;
+            public charAt (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public codePointAt(p0: any): any;
+            public charCodeAt (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public concat(p0: any): any;
+            public codePointAt (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public endsWith(p0: any): any;
+            public concat (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public fixed(): any;
+            public endsWith (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public fontcolor(p0: any): any;
+            public fixed (): any;
 
             // Native method; no parameter or return type inference available
-            public fontsize(p0: any): any;
+            public fontcolor (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public includes(p0: any): any;
+            public fontsize (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public indexOf(p0: any): any;
+            public includes (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public italics(): any;
+            public indexOf (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public lastIndexOf(p0: any): any;
+            public italics (): any;
 
             // Native method; no parameter or return type inference available
-            public link(p0: any): any;
+            public lastIndexOf (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public localeCompare(p0: any): any;
+            public link (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public match(p0: any): any;
+            public localeCompare (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public matchAll(p0: any): any;
+            public match (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public normalize(): any;
+            public matchAll (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public padEnd(p0: any): any;
+            public normalize (): any;
 
             // Native method; no parameter or return type inference available
-            public padStart(p0: any): any;
+            public padEnd (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public repeat(p0: any): any;
+            public padStart (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public replace(p0: any, p1: any): any;
+            public repeat (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public search(p0: any): any;
+            public replace (p0: any, p1: any): any;
 
             // Native method; no parameter or return type inference available
-            public slice(p0: any, p1: any): any;
+            public search (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public small(): any;
+            public slice (p0: any, p1: any): any;
 
             // Native method; no parameter or return type inference available
-            public split(p0: any, p1: any): any;
+            public small (): any;
 
             // Native method; no parameter or return type inference available
-            public startsWith(p0: any): any;
+            public split (p0: any, p1: any): any;
 
             // Native method; no parameter or return type inference available
-            public strike(): any;
+            public startsWith (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public sub(): any;
+            public strike (): any;
 
             // Native method; no parameter or return type inference available
-            public substr(p0: any, p1: any): any;
+            public sub (): any;
 
             // Native method; no parameter or return type inference available
-            public substring(p0: any, p1: any): any;
+            public substr (p0: any, p1: any): any;
 
             // Native method; no parameter or return type inference available
-            public sup(): any;
+            public substring (p0: any, p1: any): any;
 
             // Native method; no parameter or return type inference available
-            public toLocaleLowerCase(): any;
+            public sup (): any;
 
             // Native method; no parameter or return type inference available
-            public toLocaleUpperCase(): any;
+            public toLocaleLowerCase (): any;
 
             // Native method; no parameter or return type inference available
-            public toLowerCase(): any;
+            public toLocaleUpperCase (): any;
 
             // Native method; no parameter or return type inference available
-            public toString(): any;
+            public toLowerCase (): any;
 
             // Native method; no parameter or return type inference available
-            public toUpperCase(): any;
+            public toString (): any;
 
             // Native method; no parameter or return type inference available
-            public trim(): any;
+            public toUpperCase (): any;
 
             // Native method; no parameter or return type inference available
-            public trimEnd(): any;
+            public trim (): any;
 
             // Native method; no parameter or return type inference available
-            public trimLeft(): any;
+            public trimEnd (): any;
 
             // Native method; no parameter or return type inference available
-            public trimRight(): any;
+            public trimLeft (): any;
 
             // Native method; no parameter or return type inference available
-            public trimStart(): any;
+            public trimRight (): any;
 
             // Native method; no parameter or return type inference available
-            public valueOf(): any;
+            public trimStart (): any;
+
+            // Native method; no parameter or return type inference available
+            public valueOf (): any;
 
         }
 
@@ -435,36 +435,36 @@ declare module 'vue-loading-overlay' {
 
             public static POSITIVE_INFINITY: number;
 
-            public static isFinite(p0: any): any;
+            public static isFinite (p0: any): any;
 
-            public static isInteger(p0: any): any;
+            public static isInteger (p0: any): any;
 
-            public static isNaN(p0: any): any;
+            public static isNaN (p0: any): any;
 
-            public static isSafeInteger(p0: any): any;
+            public static isSafeInteger (p0: any): any;
 
-            public static parseFloat(p0: any): any;
+            public static parseFloat (p0: any): any;
 
-            public static parseInt(p0: any, p1: any): any;
-            constructor(p0: any);
-
-            // Native method; no parameter or return type inference available
-            public toExponential(p0: any): any;
+            public static parseInt (p0: any, p1: any): any;
+            constructor (p0: any);
 
             // Native method; no parameter or return type inference available
-            public toFixed(p0: any): any;
+            public toExponential (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public toLocaleString(): any;
+            public toFixed (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public toPrecision(p0: any): any;
+            public toLocaleString (): any;
 
             // Native method; no parameter or return type inference available
-            public toString(p0: any): any;
+            public toPrecision (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public valueOf(): any;
+            public toString (p0: any): any;
+
+            // Native method; no parameter or return type inference available
+            public valueOf (): any;
 
         }
 
@@ -486,47 +486,47 @@ declare module 'vue-loading-overlay' {
 
             public static POSITIVE_INFINITY: number;
 
-            public static isFinite(p0: any): any;
+            public static isFinite (p0: any): any;
 
-            public static isInteger(p0: any): any;
+            public static isInteger (p0: any): any;
 
-            public static isNaN(p0: any): any;
+            public static isNaN (p0: any): any;
 
-            public static isSafeInteger(p0: any): any;
+            public static isSafeInteger (p0: any): any;
 
-            public static parseFloat(p0: any): any;
+            public static parseFloat (p0: any): any;
 
-            public static parseInt(p0: any, p1: any): any;
-            constructor(p0: any);
-
-            // Native method; no parameter or return type inference available
-            public toExponential(p0: any): any;
+            public static parseInt (p0: any, p1: any): any;
+            constructor (p0: any);
 
             // Native method; no parameter or return type inference available
-            public toFixed(p0: any): any;
+            public toExponential (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public toLocaleString(): any;
+            public toFixed (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public toPrecision(p0: any): any;
+            public toLocaleString (): any;
 
             // Native method; no parameter or return type inference available
-            public toString(p0: any): any;
+            public toPrecision (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public valueOf(): any;
+            public toString (p0: any): any;
+
+            // Native method; no parameter or return type inference available
+            public valueOf (): any;
 
         }
 
         class programmatic {
-            constructor(p0: any);
+            constructor (p0: any);
 
             // Native method; no parameter or return type inference available
-            public toString(): any;
+            public toString (): any;
 
             // Native method; no parameter or return type inference available
-            public valueOf(): any;
+            public valueOf (): any;
 
         }
 
@@ -548,36 +548,36 @@ declare module 'vue-loading-overlay' {
 
             public static POSITIVE_INFINITY: number;
 
-            public static isFinite(p0: any): any;
+            public static isFinite (p0: any): any;
 
-            public static isInteger(p0: any): any;
+            public static isInteger (p0: any): any;
 
-            public static isNaN(p0: any): any;
+            public static isNaN (p0: any): any;
 
-            public static isSafeInteger(p0: any): any;
+            public static isSafeInteger (p0: any): any;
 
-            public static parseFloat(p0: any): any;
+            public static parseFloat (p0: any): any;
 
-            public static parseInt(p0: any, p1: any): any;
-            constructor(p0: any);
-
-            // Native method; no parameter or return type inference available
-            public toExponential(p0: any): any;
+            public static parseInt (p0: any, p1: any): any;
+            constructor (p0: any);
 
             // Native method; no parameter or return type inference available
-            public toFixed(p0: any): any;
+            public toExponential (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public toLocaleString(): any;
+            public toFixed (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public toPrecision(p0: any): any;
+            public toLocaleString (): any;
 
             // Native method; no parameter or return type inference available
-            public toString(p0: any): any;
+            public toPrecision (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public valueOf(): any;
+            public toString (p0: any): any;
+
+            // Native method; no parameter or return type inference available
+            public valueOf (): any;
 
         }
 
@@ -599,36 +599,36 @@ declare module 'vue-loading-overlay' {
 
             public static POSITIVE_INFINITY: number;
 
-            public static isFinite(p0: any): any;
+            public static isFinite (p0: any): any;
 
-            public static isInteger(p0: any): any;
+            public static isInteger (p0: any): any;
 
-            public static isNaN(p0: any): any;
+            public static isNaN (p0: any): any;
 
-            public static isSafeInteger(p0: any): any;
+            public static isSafeInteger (p0: any): any;
 
-            public static parseFloat(p0: any): any;
+            public static parseFloat (p0: any): any;
 
-            public static parseInt(p0: any, p1: any): any;
-            constructor(p0: any);
-
-            // Native method; no parameter or return type inference available
-            public toExponential(p0: any): any;
+            public static parseInt (p0: any, p1: any): any;
+            constructor (p0: any);
 
             // Native method; no parameter or return type inference available
-            public toFixed(p0: any): any;
+            public toExponential (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public toLocaleString(): any;
+            public toFixed (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public toPrecision(p0: any): any;
+            public toLocaleString (): any;
 
             // Native method; no parameter or return type inference available
-            public toString(p0: any): any;
+            public toPrecision (p0: any): any;
 
             // Native method; no parameter or return type inference available
-            public valueOf(): any;
+            public toString (p0: any): any;
+
+            // Native method; no parameter or return type inference available
+            public valueOf (): any;
 
         }
 
@@ -636,13 +636,13 @@ declare module 'vue-loading-overlay' {
 
         namespace isFullPage {
             class type {
-                constructor(p0: any);
+                constructor (p0: any);
 
                 // Native method; no parameter or return type inference available
-                public toString(): any;
+                public toString (): any;
 
                 // Native method; no parameter or return type inference available
-                public valueOf(): any;
+                public valueOf (): any;
 
             }
 
@@ -651,150 +651,150 @@ declare module 'vue-loading-overlay' {
         namespace loader {
             class type {
 
-                public static fromCharCode(p0: any): any;
+                public static fromCharCode (p0: any): any;
 
-                public static fromCodePoint(p0: any): any;
+                public static fromCodePoint (p0: any): any;
 
-                public static raw(p0: any): any;
-                constructor(p0: any);
-
-                // Native method; no parameter or return type inference available
-                public anchor(p0: any): any;
+                public static raw (p0: any): any;
+                constructor (p0: any);
 
                 // Native method; no parameter or return type inference available
-                public big(): any;
+                public anchor (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public blink(): any;
+                public big (): any;
 
                 // Native method; no parameter or return type inference available
-                public bold(): any;
+                public blink (): any;
 
                 // Native method; no parameter or return type inference available
-                public charAt(p0: any): any;
+                public bold (): any;
 
                 // Native method; no parameter or return type inference available
-                public charCodeAt(p0: any): any;
+                public charAt (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public codePointAt(p0: any): any;
+                public charCodeAt (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public concat(p0: any): any;
+                public codePointAt (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public endsWith(p0: any): any;
+                public concat (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public fixed(): any;
+                public endsWith (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public fontcolor(p0: any): any;
+                public fixed (): any;
 
                 // Native method; no parameter or return type inference available
-                public fontsize(p0: any): any;
+                public fontcolor (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public includes(p0: any): any;
+                public fontsize (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public indexOf(p0: any): any;
+                public includes (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public italics(): any;
+                public indexOf (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public lastIndexOf(p0: any): any;
+                public italics (): any;
 
                 // Native method; no parameter or return type inference available
-                public link(p0: any): any;
+                public lastIndexOf (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public localeCompare(p0: any): any;
+                public link (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public match(p0: any): any;
+                public localeCompare (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public matchAll(p0: any): any;
+                public match (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public normalize(): any;
+                public matchAll (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public padEnd(p0: any): any;
+                public normalize (): any;
 
                 // Native method; no parameter or return type inference available
-                public padStart(p0: any): any;
+                public padEnd (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public repeat(p0: any): any;
+                public padStart (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public replace(p0: any, p1: any): any;
+                public repeat (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public search(p0: any): any;
+                public replace (p0: any, p1: any): any;
 
                 // Native method; no parameter or return type inference available
-                public slice(p0: any, p1: any): any;
+                public search (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public small(): any;
+                public slice (p0: any, p1: any): any;
 
                 // Native method; no parameter or return type inference available
-                public split(p0: any, p1: any): any;
+                public small (): any;
 
                 // Native method; no parameter or return type inference available
-                public startsWith(p0: any): any;
+                public split (p0: any, p1: any): any;
 
                 // Native method; no parameter or return type inference available
-                public strike(): any;
+                public startsWith (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public sub(): any;
+                public strike (): any;
 
                 // Native method; no parameter or return type inference available
-                public substr(p0: any, p1: any): any;
+                public sub (): any;
 
                 // Native method; no parameter or return type inference available
-                public substring(p0: any, p1: any): any;
+                public substr (p0: any, p1: any): any;
 
                 // Native method; no parameter or return type inference available
-                public sup(): any;
+                public substring (p0: any, p1: any): any;
 
                 // Native method; no parameter or return type inference available
-                public toLocaleLowerCase(): any;
+                public sup (): any;
 
                 // Native method; no parameter or return type inference available
-                public toLocaleUpperCase(): any;
+                public toLocaleLowerCase (): any;
 
                 // Native method; no parameter or return type inference available
-                public toLowerCase(): any;
+                public toLocaleUpperCase (): any;
 
                 // Native method; no parameter or return type inference available
-                public toString(): any;
+                public toLowerCase (): any;
 
                 // Native method; no parameter or return type inference available
-                public toUpperCase(): any;
+                public toString (): any;
 
                 // Native method; no parameter or return type inference available
-                public trim(): any;
+                public toUpperCase (): any;
 
                 // Native method; no parameter or return type inference available
-                public trimEnd(): any;
+                public trim (): any;
 
                 // Native method; no parameter or return type inference available
-                public trimLeft(): any;
+                public trimEnd (): any;
 
                 // Native method; no parameter or return type inference available
-                public trimRight(): any;
+                public trimLeft (): any;
 
                 // Native method; no parameter or return type inference available
-                public trimStart(): any;
+                public trimRight (): any;
 
                 // Native method; no parameter or return type inference available
-                public valueOf(): any;
+                public trimStart (): any;
+
+                // Native method; no parameter or return type inference available
+                public valueOf (): any;
 
             }
 
@@ -802,19 +802,19 @@ declare module 'vue-loading-overlay' {
 
         namespace onCancel {
             class type {
-                constructor(p0: any);
+                constructor (p0: any);
 
                 // Native method; no parameter or return type inference available
-                public apply(p0: any, p1: any): any;
+                public apply (p0: any, p1: any): any;
 
                 // Native method; no parameter or return type inference available
-                public bind(p0: any): any;
+                public bind (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public call(p0: any): any;
+                public call (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public toString(): any;
+                public toString (): any;
 
             }
 
@@ -823,150 +823,150 @@ declare module 'vue-loading-overlay' {
         namespace transition {
             class type {
 
-                public static fromCharCode(p0: any): any;
+                public static fromCharCode (p0: any): any;
 
-                public static fromCodePoint(p0: any): any;
+                public static fromCodePoint (p0: any): any;
 
-                public static raw(p0: any): any;
-                constructor(p0: any);
-
-                // Native method; no parameter or return type inference available
-                public anchor(p0: any): any;
+                public static raw (p0: any): any;
+                constructor (p0: any);
 
                 // Native method; no parameter or return type inference available
-                public big(): any;
+                public anchor (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public blink(): any;
+                public big (): any;
 
                 // Native method; no parameter or return type inference available
-                public bold(): any;
+                public blink (): any;
 
                 // Native method; no parameter or return type inference available
-                public charAt(p0: any): any;
+                public bold (): any;
 
                 // Native method; no parameter or return type inference available
-                public charCodeAt(p0: any): any;
+                public charAt (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public codePointAt(p0: any): any;
+                public charCodeAt (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public concat(p0: any): any;
+                public codePointAt (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public endsWith(p0: any): any;
+                public concat (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public fixed(): any;
+                public endsWith (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public fontcolor(p0: any): any;
+                public fixed (): any;
 
                 // Native method; no parameter or return type inference available
-                public fontsize(p0: any): any;
+                public fontcolor (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public includes(p0: any): any;
+                public fontsize (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public indexOf(p0: any): any;
+                public includes (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public italics(): any;
+                public indexOf (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public lastIndexOf(p0: any): any;
+                public italics (): any;
 
                 // Native method; no parameter or return type inference available
-                public link(p0: any): any;
+                public lastIndexOf (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public localeCompare(p0: any): any;
+                public link (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public match(p0: any): any;
+                public localeCompare (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public matchAll(p0: any): any;
+                public match (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public normalize(): any;
+                public matchAll (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public padEnd(p0: any): any;
+                public normalize (): any;
 
                 // Native method; no parameter or return type inference available
-                public padStart(p0: any): any;
+                public padEnd (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public repeat(p0: any): any;
+                public padStart (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public replace(p0: any, p1: any): any;
+                public repeat (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public search(p0: any): any;
+                public replace (p0: any, p1: any): any;
 
                 // Native method; no parameter or return type inference available
-                public slice(p0: any, p1: any): any;
+                public search (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public small(): any;
+                public slice (p0: any, p1: any): any;
 
                 // Native method; no parameter or return type inference available
-                public split(p0: any, p1: any): any;
+                public small (): any;
 
                 // Native method; no parameter or return type inference available
-                public startsWith(p0: any): any;
+                public split (p0: any, p1: any): any;
 
                 // Native method; no parameter or return type inference available
-                public strike(): any;
+                public startsWith (p0: any): any;
 
                 // Native method; no parameter or return type inference available
-                public sub(): any;
+                public strike (): any;
 
                 // Native method; no parameter or return type inference available
-                public substr(p0: any, p1: any): any;
+                public sub (): any;
 
                 // Native method; no parameter or return type inference available
-                public substring(p0: any, p1: any): any;
+                public substr (p0: any, p1: any): any;
 
                 // Native method; no parameter or return type inference available
-                public sup(): any;
+                public substring (p0: any, p1: any): any;
 
                 // Native method; no parameter or return type inference available
-                public toLocaleLowerCase(): any;
+                public sup (): any;
 
                 // Native method; no parameter or return type inference available
-                public toLocaleUpperCase(): any;
+                public toLocaleLowerCase (): any;
 
                 // Native method; no parameter or return type inference available
-                public toLowerCase(): any;
+                public toLocaleUpperCase (): any;
 
                 // Native method; no parameter or return type inference available
-                public toString(): any;
+                public toLowerCase (): any;
 
                 // Native method; no parameter or return type inference available
-                public toUpperCase(): any;
+                public toString (): any;
 
                 // Native method; no parameter or return type inference available
-                public trim(): any;
+                public toUpperCase (): any;
 
                 // Native method; no parameter or return type inference available
-                public trimEnd(): any;
+                public trim (): any;
 
                 // Native method; no parameter or return type inference available
-                public trimLeft(): any;
+                public trimEnd (): any;
 
                 // Native method; no parameter or return type inference available
-                public trimRight(): any;
+                public trimLeft (): any;
 
                 // Native method; no parameter or return type inference available
-                public trimStart(): any;
+                public trimRight (): any;
 
                 // Native method; no parameter or return type inference available
-                public valueOf(): any;
+                public trimStart (): any;
+
+                // Native method; no parameter or return type inference available
+                public valueOf (): any;
 
             }
 
@@ -975,7 +975,7 @@ declare module 'vue-loading-overlay' {
     }
 
     export namespace watch {
-        function active(value: any): void;
+        function active (value: any): void;
 
     }
 

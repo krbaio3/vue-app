@@ -3,12 +3,12 @@ import { AxiosRequestConfig, AxiosResponse, AxiosInstance, AxiosStatic } from 'a
 
 export namespace Http {
     export class ApiJWTService {
-        constructor() {
+        constructor () {
             this.request();
             this.response();
         }
 
-        protected request() {
+        protected request () {
             Vue.axios.interceptors.request.use((config: AxiosRequestConfig) => {
                 Vue.$log.debug('Axios resquest');
                 return config;
@@ -17,7 +17,7 @@ export namespace Http {
                 return Promise.reject(error);
             });
         }
-        protected response() {
+        protected response () {
             Vue.axios.interceptors.response.use((response: AxiosResponse) => {
                 Vue.$log.debug('Axios resquest');
                 return response;

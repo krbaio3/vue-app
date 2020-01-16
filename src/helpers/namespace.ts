@@ -1,4 +1,4 @@
-function mapValues(obj: any, f: any) {
+function mapValues (obj: any, f: any) {
   const res: any = {};
   Object.keys(obj).forEach((key) => {
     res[key] = f(obj[key], key);

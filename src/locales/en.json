@@ -22,5 +22,11 @@
   "messages": {
     "processing": "Loading"
   },
+  "about": {
+    "title": "This is an about page",
+    "name": "Name: ",
+    "appName": "App Name: ",
+    "appVersion": "App Version: "
+  },
   "message": "Vue Vuex TS with i18n !!"
 }

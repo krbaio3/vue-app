@@ -13,3 +13,9 @@ export interface Error {
     error: boolean;
     errorMessage: string;
 }
+
+export interface Data {
+    id: number;
+    text: string;
+    done: boolean;
+}

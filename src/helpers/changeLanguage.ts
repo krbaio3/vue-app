@@ -7,6 +7,6 @@ export const changeLanguage: () => void = () => {
     i18n.locale = store.getters.language;
     const lang = store.getters.language;
     return import(`vee-validate/dist/locale/${lang}.json`).then((locale) => {
-        localize(store.getters.language, locale);
+        localize(lang, locale);
     });
 };

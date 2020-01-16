@@ -6,20 +6,20 @@
       :items="todos"
       :fields="fields"
     >
-      <template>
+      <template v-slot:cell(actions)="row">
         <b-button
           size="sm"
           @click.prevent="updateTodoStatus(row.item)"
           class="mr-1"
           v-html="$t('todo.list.update')"
-        ></b-button>
+        />
         <b-button
           variant="danger"
           size="sm"
           @click.prevent="deleteTodo(row.item)"
           class="mr-1"
           v-html="$t('todo.list.delete')"
-        ></b-button>
+        />
       </template>
     </b-table>
   </div>

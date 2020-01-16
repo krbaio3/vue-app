@@ -11,6 +11,9 @@
     "object-literal-sort-keys": false,
     "ordered-imports": false,
     "quotemark": [true, "single"],
-    "no-namespace": false
+    "no-namespace": false,
+    "space-before-function-paren": [true, "always"],
+    "curly": true,
+    "whitespace": true
   }
 }

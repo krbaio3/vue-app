@@ -1,7 +1,7 @@
 const fs = require('fs');
 const packageJson = fs.readFileSync('./package.json');
 const version = JSON.parse(packageJson).version || 0;
-console.log(version);
+const name = JSON.parse(packageJson).name || '';
 const {
   DefinePlugin
 } = require('webpack');
@@ -29,7 +29,8 @@ module.exports = {
     plugins: [
       new DefinePlugin({
         'process.env': {
-          PACKAGE_VERSION: '"' + version + '"'
+          PACKAGE_VERSION: '"' + version + '"',
+          NAME_APP: '"' + name + '"',
         }
       }),
     ],

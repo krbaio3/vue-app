@@ -19,6 +19,12 @@
       "error": "Error cargando los ToDoS"
     }
   },
+  "about": {
+    "title": "Esto es una About Page",
+     "name": "Nombre: ",
+    "appName": "App Name: ",
+    "appVersion": "App Version: "
+  },
   "messages": {
     "processing": "Cargando"
   },

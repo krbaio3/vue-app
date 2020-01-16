@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!errorLoadingTodos">
+  <div v-if="!errorLoadingObj.error">
     <b-row class="muy-5">
       <todo-form class="mx-auto" />
     </b-row>
@@ -19,7 +19,7 @@
     v-else
     class="alert alert-danger text-center"
   >
-    <span v-html="error"></span>
-    <p>{{errorMessage}}</p>
+    <h4 v-html="$t('todo.app.error')"/>
+    <h5 v-html="errorLoadingObj.errorMessage" />
   </div>
 </template>

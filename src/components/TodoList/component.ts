@@ -6,6 +6,7 @@ import Template from './template.vue';
 const namespace: string = 'todoModule';
 
 @Component({
+    name: 'ToDoList',
     mixins: [Template],
 })
 export class TodoList extends Vue {

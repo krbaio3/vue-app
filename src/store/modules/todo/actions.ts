@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { ActionContext, ActionTree } from 'vuex';
-import { TodoState, Todo } from './types';
+import { TodoState, Todo, Data } from './types';
 import { RootState } from '@/store/types';
 import { AxiosResponse } from 'axios';
 
@@ -9,7 +9,7 @@ type TodoActionContext = ActionContext<TodoState, RootState>;
 type TodoActionTree = ActionTree<TodoState, RootState>;
 
 export const actions: TodoActionTree = {
-    async fetchData(context: TodoActionContext): Promise<any> {
+    async fetchData (context: TodoActionContext): Promise<any> {
         try {
             const response: AxiosResponse = await Vue.axios({
                 url: '/todos',
@@ -22,15 +22,17 @@ export const actions: TodoActionTree = {
             Vue.$log.debug('Desbloquear BlockUI');
         }
     },
-    async addTodo(context: TodoActionContext, todo: string): Promise<any> {
+    async addTodo (context: TodoActionContext, todo: string): Promise<any> {
+        const data: Data = {
+            id: Date.now(),
+            text: todo,
+            done: false,
+        };
         try {
             const response: AxiosResponse = await Vue.axios({
                 method: 'POST',
                 url: '/todos',
-                data: {
-                    id: Date.now(),
-                    done: false,
-                },
+                data,
             });
             if (response && response.data) {
                 context.dispatch('fetchData');
@@ -41,7 +43,7 @@ export const actions: TodoActionTree = {
             Vue.$log.debug('Desbloquear BlockUI');
         }
     },
-    async updateTodoStatus(context: TodoActionContext, todo: Todo): Promise<any> {
+    async updateTodoStatus (context: TodoActionContext, todo: Todo): Promise<any> {
         try {
             const response: AxiosResponse = await Vue.axios({
                 method: 'PUT',
@@ -61,7 +63,7 @@ export const actions: TodoActionTree = {
             Vue.$log.debug('Desbloquear BlockUI');
         }
     },
-    async deleteTodo(context: TodoActionContext, todo: Todo): Promise<any> {
+    async deleteTodo (context: TodoActionContext, todo: Todo): Promise<any> {
         try {
             const { data } = await Vue.axios({
                 method: 'DELETE',
